@@ -1,3 +1,22 @@
+Metadata-Version: 2.4
+Name: pybugmate
+Version: 0.1.0
+Summary: Effortless debugging, error hints, profiling, and postmortem REPL for Python
+Home-page: https://github.com/ANU-2524/pybugmate
+Author: ANU SONI
+Author-email: anusoni25.2006@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: IPython
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
 # PyBugMate
 
 **[PyPI-READY] Effortless, smart debugging and postmortem for every Python project. Track errors, see real data, get smart hints, and drop into a REPL instantly—zero setup!**
@@ -40,9 +59,9 @@ Paste these lines at the top of your script:
 ---
 
 
-## 🌐 Links
+## **🌐 Links**
 - [GitHub](https://github.com/ANU-2524/pybugmate)
-- [PyPI](https://pypi.org/project/pybugmate/)
+- PyPI: Coming soon!
 
 ---
 
