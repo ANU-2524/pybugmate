@@ -22,12 +22,24 @@ pip install pybugmate
 ## 🧑‍💻 Usage: Quick Start
 
 Paste these lines at the top of your script:
+from pybugmate.postmortem import enable_postmortem   
+from pybugmate.autowrap import autowrap
 
-### from pybugmate.postmortem import enable_postmortem
-### from pybugmate.autowrap import autowrap
+enable_postmortem()              # Step 1: Enable postmortem REPL for ANY unhandled crash !
 
-### enable_postmortem() # Step 1: Enable postmortem REPL for ANY unhandled crash!
-### autowrap(globals()) # Step 2: Auto-wrap all your functions for smart tracing
+# Define your functions normally
+def foo(x): 
+    return x+1
+
+def bar(y): 
+    return foo(y) * 2
+
+autowrap(globals())              # Step 2: Auto-wrap all your functions for smart tracing
+### (Call this after defining functions you want wrapped...)
+
+### Now call your functions as usual
+result = bar(5)
+print(result)
 
 ---
 
@@ -39,7 +51,6 @@ Paste these lines at the top of your script:
 
 ---
 
-
 ## 🌐 Links
 - [GitHub](https://github.com/ANU-2524/pybugmate)
 - [PyPI](https://pypi.org/project/pybugmate/)
@@ -47,4 +58,4 @@ Paste these lines at the top of your script:
 ---
 
 > PRs, issues, and stars are welcome !...  
-> Built with ♥ by ANU-2524.
+> Built with ♥ by ANU.

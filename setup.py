@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pybugmate',
-    version='0.1.0',
+    version='0.1.2',
     description='Effortless debugging, error hints, profiling, and postmortem REPL for Python',
     author='ANU SONI',
     author_email='anusoni25.2006@gmail.com',
